@@ -1,0 +1,20 @@
+.header{
+    background-color: #181617;
+}
+
+.navbar{
+    &__menu{
+        &-list{
+            list-style-type: none;
+        }
+        &-link{
+            color:#fff;
+            opacity: .2;
+            font-size: 18px;
+            transition: all .3s ease;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
