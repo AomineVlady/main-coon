@@ -1,5 +1,10 @@
+.main{
+    z-index: 5;
+}
+
 .main-pets{
     background-color: #1F1C1D;
+    
 }
 
 .default-subtitle{
@@ -8,7 +13,28 @@
     font-weight: 400;
 }
 
+.title{
+    font-family: "yesevaone";
+    font-weight: 400;
+    margin: 0;
+}
+
+.button{
+    display: block;
+    font-size: 16px;
+    padding: 18px 0 17px;
+    text-align: center;
+    width: 200px;
+    color: #fff;
+    border: 0.5px solid $main-color;
+    transition: all .3s ease;
+    &:hover{
+        background-color: $main-color;
+    }
+}
+
 .lead__text-title{
     font-size: 36px;
     
 }
+

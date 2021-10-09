@@ -1,9 +1,15 @@
 .header {
     background-color: #181617;
+    padding-top: 28px;
+    position: relative;
+    z-index: 3;
 }
 
 .navbar {
     display: flex;
+    align-items: center;
+    z-index: 2;
+    
 }
 
 .navbar__menu {
@@ -17,25 +23,120 @@
     list-style-type: none;
 }
 
-.navbar__menu-item {
-    padding: 0 20px;
-}
-
 .navbar__menu-link {
     color: #fff;
     opacity: 0.2;
     font-size: 18px;
     transition: all 0.3s ease;
+    padding: 20px 50px 20px 0;
     &:hover {
         opacity: 1;
     }
 }
 
+.navbar__logo-icon{
+    width: 59px;
+    height: 25px;
+    fill: $main-color;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+
 .intro {
-    &__content {
-        text-align: left;
-        &-title {
-            font-size: 52px;
-        }
+    position: relative;
+    padding: 40px 0;
+}
+
+.intro__content {
+    width: 40%;
+    padding: 50px 0;
+    text-align: left;
+}
+
+.intro__content-title {
+    font-size: 52px;
+    margin: 0;
+    padding: 20px 0;
+    width: 80%;
+}
+
+.intro__content-description{
+    width: 60%;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.intro-link{
+    margin: 20px 0;
+    padding: 20px;
+}
+
+
+
+.intro-picture{
+    position: absolute;
+    width: 1019px;
+    height: 684px;
+    right: 0;
+    top: -90px;
+    z-index: -1;
+}
+
+.intro__socials{
+    transform: translateX(-110px);
+    display: flex;
+}
+
+.intro__socials-list{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 0.5px;
+        height: 77px;
+        color:rgba(255, 255, 255, 0.61);
+        background-color: rgba(255, 255, 255, 0.61);
+        top:-110px;
+        left: 50px;
+        
     }
 }
+
+.intro__social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    transition: fill .3s ease;
+    &:hover{
+        fill: $main-color;
+    }
+}
+
+.intro__social-icon>use{
+    flex-grow: 3;
+}
+
+
+@media (max-width: $desktop-width) {
+    .container {
+        width: auto;
+        margin: 0;
+        padding: 0 27px;
+    }
+}
+  
+@media (max-width: $tablet-width) {
+    .container {
+        padding: 0 15px;
+    }
+}
+  

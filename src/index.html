@@ -11,61 +11,66 @@
 <body class="page">
     <header class="header">
         <div class="container">
-            <div class="header__inner">
-                <section class="navbar">
-                    <nav class="navbar__menu">
-                        <ul class="navbar__menu-list">
-                            <li class="navbar__menu-item">
-                                <a href="#" class="navbar__menu-link">Главная</a>
-                            </li>
-                            <li class="navbar__menu-item">
-                                <a href="#" class="navbar__menu-link">Питомники</a>
-                            </li>
-                            <li class="navbar__menu-item">
-                                <a href="#" class="navbar__menu-link">Контакты</a>
-                            </li>
-                        </ul>
-                    </nav>
-                
-                    <a href="#" class="logo-link">
-                        <img src="http://placehold.it/59x59" alt="logo">
-                    </a>
-                </section>
-
-                <section class="intro">
-                    <div class="intro__content">
-                        <span class="intro__content-pref default-subtitle">Новосибирск</span>
-                        <h1 class="intro__content-title">Питомник Мейн-Кунов</h1>
-                        <p class="intro__content-description default-subtitle">Первый питомник с расширенным спектром услуг</p>
-                    </div>
-
-                    <a href="#" class="intro-link button">Смотреть котиков</a>
-
-                    <img class="intro-cat" src="http://placehold.it/1068x712" alt="Мэйн-Кун"> <!-- по расположению котика вопросы -->
-                
-                    <div class="intro__socials"> <!-- можно реализовать без ul-li -->
-                        <ul class="intro__socials-list">
-                            <li class="intro__socials-item">
-                                <a href="#" class="intro__socials-link">
-                                    Вконтакте
-                                </a>
-                            </li>
-                            <li class="intro__socials-item">
-                                <a href="#" class="intro__socials-link">
-                                    Твиттер
-                                </a>
-                            </li>
-                            <li class="intro__socials-item">
-                                <a href="#" class="intro__socials-link">
-                                    Фейсбук
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-            </div>
+            <section class="navbar">
+                <nav class="navbar__menu">
+                    <ul class="navbar__menu-list">
+                        <li class="navbar__menu-item">
+                            <a href="#" class="navbar__menu-link">Главная</a>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="#" class="navbar__menu-link">Питомники</a>
+                        </li>
+                        <li class="navbar__menu-item">
+                            <a href="#" class="navbar__menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            
+                <a href="#" class="navbar__logo-link">
+                    <svg class="navbar__logo-icon">
+                        <use xlink:href="img/crown.svg#crown"></use>
+                    </svg>
+                </a>
+            </section>
         </div>
+        <section class="intro">
+            <div class="container">
+                <div class="intro__content">
+                    <span class="intro__content-pref default-subtitle">Новосибирск</span>
+                    <h1 class="intro__content-title title">Питомник Мейн-Кунов</h1>
+                    <p class="intro__content-description default-subtitle">Первый питомник с расширенным спектром услуг</p>
+                </div>
+
+                <a href="#" class="intro-link button">Смотреть котиков</a>
+            
+                <div class="intro__socials"> <!-- можно реализовать без ul-li -->
+                    <ul class="intro__socials-list">
+                        <li class="intro__socials-item">
+                            <a href="#" class="intro__socials-link">
+                                <svg class="intro__social-icon">
+                                    <use xlink:href="img/vk.svg#vk-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="intro__socials-item">
+                            <a href="#" class="intro__socials-link">
+                                <svg class="intro__social-icon">
+                                    <use xlink:href="img/Twitter.svg#twitter-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="intro__socials-item">
+                            <a href="#" class="intro__socials-link">
+                                <svg class="intro__social-icon">
+                                    <use xlink:href="img/Facebook.svg#facebook-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="intro-picture" src="img/header-cat.png" alt="Мэйн-Кун">
+        </section>
     </header>
     
     <main class="main">
@@ -75,7 +80,7 @@
             <div class="container">
                 <div class="main-pets__inner">
                     <div class="lead__text">
-                        <h2 class="lead__text-title">Питомцы</h2>
+                        <h2 class="lead__text-title title">Питомцы</h2>
                         <p class="lead__text-subtitle default-subtitle">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
                     </div>
 
@@ -305,10 +310,8 @@
 
                     <div class="accordion"> 
                         <div class="accordion__item">
-                            <p class="accordion__item-number">01</p>
-                            <input class="accordion__item-input" type="checkbox" id="tab01"><!-- на after прописать "+-" -->
-                            <label class="accordion__item-title" for="tab01"></label>
-                            <div class="accordion__item-text">
+                            <button class="accordion__item-button">С какого возраста можно забирать котенка из питомника?</button>
+                            <div class="accordion__item-content">
                                 <p>
                                     Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
                                 </p>
@@ -318,10 +321,8 @@
                             </div>
                         </div>
                         <div class="accordion__item">
-                            <p class="accordion__item-number">02</p>
-                            <input class="accordion__item-input" type="checkbox" id="tab02"><!-- на after прописать "+-" -->
-                            <label class="accordion__item-title" for="tab02"></label>
-                            <div class="accordion__item-text">
+                            <button class="accordion__item-button">Как зарезервировать котенка?</button>
+                            <div class="accordion__item-content">
                                 <p>
                                     Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
                                 </p>
@@ -331,10 +332,8 @@
                             </div>
                         </div>
                         <div class="accordion__item">
-                            <p class="accordion__item-number">03</p>
-                            <input class="accordion__item-input" type="checkbox" id="tab03"><!-- на after прописать "+-" -->
-                            <label class="accordion__item-title" for="tab03"></label>
-                            <div class="accordion__item-text">
+                            <button class="accordion__item-button">Можно ли купить кота, если я живу в другом городе?</button>
+                            <div class="accordion__item-content">
                                 <p>
                                     Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
                                 </p>
@@ -344,10 +343,8 @@
                             </div>
                         </div>
                         <div class="accordion__item">
-                            <p class="accordion__item-number">04</p>
-                            <input class="accordion__item-input" type="checkbox" id="tab04"><!-- на after прописать "+-" -->
-                            <label class="accordion__item-title" for="tab04"></label>
-                            <div class="accordion__item-text">
+                            <button class="accordion__item-button">Как подготовить дом к приему нового питомца? </button>
+                            <div class="accordion__item-content">
                                 <p>
                                     Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
                                 </p>
@@ -427,8 +424,8 @@
     <div class="popup" id="call">
         <div class="popup__content">
             <div class="popup__header">
-                <p class="popup__header-title">Заказать звонок</p>
-                <a href="#" class="close-popup"><span>X</span></a>
+                <h2 class="popup__header-title">Заказать звонок</h2>
+                <button href="#" class="close-popup">закрыть</button>
             </div>
             <p class="popup__content-text">Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
             <form class="form" action="#">
@@ -437,13 +434,13 @@
                         <p class="form__data-title">
                             Как к вам обращаться?
                         </p>
-                        <input class="form__data-input" type="text" placeholder="Введите имя">
+                        <input class="form__data-input" type="text" name="name" placeholder="Введите имя">
                     </div>
                     <div class="form__data-item">
                         <p class="form__data-title">
                             Номер телефона
                         </p>
-                        <input class="form__data-input" type="tel" placeholder="+7(___)___-__-__">
+                        <input class="form__data-input" type="tel" name="phone" placeholder="+7(___)___-__-__">
                     </div>
                 </div>
                
@@ -451,7 +448,7 @@
                     <div class="form__footer-agreement">
                         <p>Нажимая на кнопку «Заказать звонок», я даю <a href="#">согласие на обработку персональных данных</a></p>
                     </div>
-                    <button class="form__footer-submit" type="submit">заказать звонок →</button>
+                    <button class="form__footer-submit" type="submit">заказать звонок</button>
                </div>
             </form>
         </div>
