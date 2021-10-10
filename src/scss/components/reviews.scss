@@ -1,0 +1,124 @@
+.reviews{
+    background-color: #1F1C1D;
+    padding-bottom: 100px;
+}
+
+.reviews-title{
+    font-size: 36px;
+    text-align: center;
+    padding: 23px;
+}
+
+.swipper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swipper__list{
+    list-style-type: none;
+}
+
+.swipper__list-item{
+    position: relative;
+}
+
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;transform: translateX(60px);
+}
+
+.review-picture{
+    z-index: 4;
+}
+
+.review__content{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 85px 60px 145px;
+    background-color: #151313;
+    transform: translateX(-80px);
+    z-index: 2;
+}
+
+.review__content-title{
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.review__content-desc{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 55px 0 0;
+    color: rgba(255, 255, 255, 0.72)
+}
+
+.review__socials{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 37px 24px;
+}
+
+.review__socials-date{
+    font-size: 12px;
+    line-height: 19px;
+    color: $main-color;
+    padding:0 10px;
+}
+
+.review__socials-link{
+    margin:0 8px;
+    border: 0.5px solid $main-color;
+    padding: 6px 4px 2px 2px;
+    transition: all .3s ease;
+    &:hover{
+        border: 0.5px solid #fff;
+    }
+    &:hover .review__social-icon{
+        fill: #fff;
+    }
+}
+
+.review__social-icon{
+    transition: all .3s ease;
+    fill: $main-color;
+}
+
+.swipper__buttons{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+
+.swipper__buttons-item{
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:nth-child(1){
+        transform: rotate(180deg);
+    }
+}
+
+.swipper__buttons-icon{
+    fill: none;
+    stroke: #A07B50;
+    transition: all .3s ease;
+    &:hover{
+        stroke: #fff;
+    }
+    
+}
+

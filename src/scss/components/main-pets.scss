@@ -5,37 +5,63 @@
 
 .main-pets{
     background-color: #1F1C1D;
-    
+    padding: 200px 0 30px;
 }
 
-.default-subtitle{
-    color: $main-color;
-    font-size: 16px;
-    font-weight: 400;
+.main-pets__inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.title{
-    font-family: "yesevaone";
-    font-weight: 400;
-    margin: 0;
+.main-pets_lead{
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-.button{
-    display: block;
-    font-size: 16px;
-    padding: 18px 0 17px;
+.picture__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture__buttons-item{
+    background: none;
+    border: none;
     text-align: center;
-    width: 200px;
-    color: #fff;
-    border: 0.5px solid $main-color;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color:#fff;
+    opacity: .2;
+    padding: 22px;
+    cursor: pointer;
     transition: all .3s ease;
     &:hover{
-        background-color: $main-color;
+        opacity: 1;
     }
 }
 
-.lead__text-title{
-    font-size: 36px;
-    
+.picture__list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 530px 530px;
+    grid-template-rows: 214px 241px;
+    align-content: center; 
+    justify-items: center;
+    justify-content: center;
+    overflow: hidden;
+    row-gap: 30px;
+    padding: 23px 0;
 }
 
+.picture__list-item{
+    grid-auto-flow: dense;
+}
+
+.pets-btn{
+    margin-top: 50px;
+}

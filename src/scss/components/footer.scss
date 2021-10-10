@@ -1,0 +1,32 @@
+.footer{
+
+}
+
+.footer__inner{
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location{
+    color:#FDF2E6;
+    opacity: .8;
+}
+
+.number{
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: bold;
+    color: #FDF2E6
+}
+
+.footer__social-icon{
+    fill:$main-color;
+    transition: all .3s ease;
+    margin: 0 4px;
+    &:hover{
+        fill:#fff;
+    }
+}

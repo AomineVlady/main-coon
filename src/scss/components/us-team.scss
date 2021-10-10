@@ -1,0 +1,79 @@
+.us-team{
+    padding: 70px 0;
+}
+
+.us-team-lead{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.employee{
+    height: 400px;
+}
+
+.employee-picture{
+   position: relative;
+}
+
+.employee img{
+    position: absolute;
+    left: 125px;
+    z-index: 9;
+    background-color: #1F1C1D;
+}
+
+.employee-wrap{
+    width: 60%;
+    border: 0.5px solid #A07B50;
+    padding: 23px 34px;
+    position: absolute;
+    right: 70px;
+    z-index: 7;
+
+}
+
+.employee-wrap__content{
+    background-color: #1F1C1D;
+    padding: 70px 100px;
+}
+
+.employee-wrap__content-title{
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 28px;
+    color: $main-color;
+}
+
+.employee-wrap__content-subtitle{
+
+}
+
+.employee-wrap__content-desc{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: #fff;
+    opacity: .7;
+}
+
+.employee__socials{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.employee__socials-link{
+    padding: 10px 8px;
+    &:hover .employee__socials-icon{
+        fill: $main-color;
+    }
+}
+
+.employee__socials-icon{
+    fill: #fff;
+    transition: all .3s ease;
+}

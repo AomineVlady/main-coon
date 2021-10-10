@@ -79,7 +79,7 @@
         <section class="main-pets">
             <div class="container">
                 <div class="main-pets__inner">
-                    <div class="lead__text">
+                    <div class="main-pets_lead lead__text">
                         <h2 class="lead__text-title title">Питомцы</h2>
                         <p class="lead__text-subtitle default-subtitle">Все представители нашего питомника имеют ветеринарный паспорт с отметками о прививках и документ с родословной</p>
                     </div>
@@ -90,20 +90,19 @@
                         <button class="picture__buttons-item">Котята</button>
                     </div>
 
-                    <div class="swipper"> <!-- блок с картинками а не свайпер-->
-                        <ul class="swipper__list">
-                            <li class="swipper__list-item">
-                                <img src="http://placehold.it/519x214" alt="Питомец">
-                            </li>
-                            <li class="swipper__list-item">
-                                <img src="http://placehold.it/535x241" alt="Питомец">
-                            </li>
-                            <li class="swipper__list-item">
-                                <img src="http://placehold.it/530x530" alt="Питомец">
-                            </li>
-                        </ul> 
+                    <div class="picture__list">
+                        <li class="picture__list-item">
+                            <img src="img/pet1.png" alt="Питомец" width="520" height="214">
+                        </li>
+                        <li class="picture__list-item">
+                            <img src="img/pet2.png" alt="Питомец" width="474" height="485">
+                        </li>
+                        <li class="picture__list-item">
+                            <img src="img/pet3.png" alt="Питомец" width="520" height="241">
+                        </li>
                     </div>
-                    <a href="#" class="button">Смотреть больше</a>
+
+                    <a href="#" class="pets-btn button">Смотреть больше</a>
                 </div>
             </div>
         </section>
@@ -112,29 +111,29 @@
         <section class="main-breeds">
             <div class="container">
                 <div class="main-breeds__inner">
-                    <div class="lead__text">
-                        <h2 class="lead__text-title">Особенности породы</h2>
+                    <div class="main-breeds_lead lead__text">
+                        <h2 class="lead__text-title title">Особенности породы</h2>
                         <p class="lead__text-subtitle default-subtitle">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
                     </div>
 
                     <!-- список огибает картинку по кругу -->
-                    <div class="features-text">
-                        <ul class="features-text__list">
-                            <li class="features-text__list-item">
-                                <p>Легко уживается в семьях с детьми или другими животными</p>
+                    <div class="features__content">
+                        <img src="img/котя3.png" alt="котя">
+                        <ul class="features__content-list">
+                            <li class="features__content-item">
+                                <p class="features__content-text">Легко уживается в семьях с детьми или другими животными</p>
                             </li>
-                            <li class="features-text__list-item">
-                                <p>Выполняет команды как дрессированная собака</p>
+                            <li class="features__content-item">
+                                <p class="features__content-text">Выполняет команды как дрессированная собака</p>
                             </li>
-                            <li class="features-text__list-item">
-                                <p>Внешний вид этой кошки похож на дикую рысь</p>
+                            <li class="features__content-item">
+                                <p class="features__content-text">Внешний вид этой кошки похож на дикую рысь</p>
                             </li>
-                            <li class="features-text__list-item">
-                                <p>Вес может достигать 12 кг, а длина 1 м</p>
+                            <li class="features__content-item">
+                                <p class="features__content-text">Вес может достигать 12 кг, а длина 1 м</p>
                             </li>
                         </ul>
                     </div>
-                    <img src="http://placehold.it/500x700" alt="котя"> <!-- тот самый кот ↕-->
                 </div>
             </div>
         </section> 
@@ -143,63 +142,65 @@
         <section class="main-benefits">
             <div class="container">
                 <div class="main-benefits__inner">
-                    <div class="lead__text">
-                        <h2 class="lead__text-title">Почему именно мы?</h2>
+                    <div class="main-benefits_lead lead__text">
+                        <h2 class="lead__text-title title">Почему именно мы?</h2>
                         <p class="lead__text-subtitle default-subtitle">Приобретая  животное в нашем питомнике, вы получите</p>
                     </div>
-                    <!-- иконки не смог вырезать нормально -->
+                    
                     <div class="benefits__content">
-                        <div class="benefits__content-item">
-                            <img src="http://placehold.it/100x100" alt="ветеринарное обслуживание">
-                            <p class="benefits__content-item-subtitle">Бесплатное ветеринарное обслуживание 5 лет</p>
-                        </div>
-                        <div class="benefits__content-item">
-                            <img src="http://placehold.it/100x100" alt="Консультирование">
-                            <p class="benefits__content-item-subtitle">Консультирование по любому вопросу 24 часа в сутки</p>
-                        </div>
-                        <div class="benefits__content-item">
-                            <img src="http://placehold.it/100x100" alt="подбор питания">
-                            <p class="benefits__content-item-subtitle">Индивидуальный подбор питания для вашего кота</p>
-                        </div>
+                        <a href="#" class="benefits__content-item">
+                            <svg class="benefits__content-icon" width="99" height="107" viewBox="0 0 99 107">
+                                <use xlink:href="img/benefits1.svg#benefits1"></use>
+                            </svg>
+                            <p class="benefits__content-desc">Бесплатное ветеринарное обслуживание 5 лет</p>
+                        </a>
+                        <a href="#" class="benefits__content-item">
+                            <svg class="benefits__content-icon" width="107" height="97" viewBox="0 0 107 97">
+                                <use xlink:href="img/benefits2.svg#benefits2"></use>
+                            </svg>
+                            <p class="benefits__content-desc">Консультирование по любому вопросу 24 часа в сутки</p>
+                        </a>
+                        <a href="#" class="benefits__content-item">
+                            <svg class="benefits__content-icon" width="71" height="108" viewBox="0 0 71 108">
+                                <use xlink:href="img/benefits3.svg#benefits3"></use>
+                            </svg>
+                            <p class="benefits__content-desc">Индивидуальный подбор питания для вашего кота</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         
         <!-- Об уходе -->
-        <section class="main-care"> <!--background image+ovarlay-->
+        <section class="main-care">
             <div class="container">
                 <div class="main-care__inner">
-                    <h2 class="lead__text-title">Об уходе за Мейн-Куном</h2>
+                    <h2 class="main-care-title title">Об уходе за Мейн-Куном</h2>
 
                     <div class="care__items">
                         <a href="#" class="care__items-item">
                             <div class="care__items-content">
                                 <h3 class="care__items-title">Шерсть</h3>
-                                <p class="care__items-subtitle default-subtitle">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</p>
+                                <p class="care__items-subtitle">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</p>
                             </div>
-                            <p class="care__items-btn">></p>
                         </a>
                         <a href="#" class="care__items-item">
                             <div class="care__items-content">
                                 <h3 class="care__items-title">Когти</h3>
                                 <p class="care__items-subtitle">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку</p>
                             </div>
-                            <p class="care__items-btn">></p>
                         </a>
                         <a href="#" class="care__items-item">
                             <div class="care__items-content">
                                 <h3 class="care__items-title">Уши и глаза</h3>
                                 <p class="care__items-subtitle">Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев, ведь это может быть признаками заболевания</p>
                             </div>
-                            <p class="care__items-btn">></p>
                         </a>
                         <a href="#" class="care__items-item">
                             <div class="care__items-content">
                                 <h3 class="care__items-title">Питание</h3>
                                 <p class="care__items-subtitle">В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам</p>
                             </div>
-                            <p class="care__items-btn">></p>
                         </a>
                     </div>
 
@@ -210,91 +211,54 @@
         <!-- сотрудники -->
         <section class="us-team">
             <div class="container">
-                <div class="us-team__inner">
-                    <div class="lead__text">
-                        <h2 class="lead__text-title">Наша команда</h2>
-                        <p class="lead__text-subtitle default-subtitle">Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии</p>
+                <div class="us-team-lead lead__text">
+                    <h2 class="lead__text-title title">Наша команда</h2>
+                    <p class="lead__text-subtitle default-subtitle">Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии</p>
+                </div>
+                
+                <div class="employee">
+                    <div class="employee-picture">
+                        <img src="img/employe.png" width="360" height="356" alt="Серёжа Попов">
                     </div>
 
-                    <div class="swipper"> <!-- ещё свайпер -->
-                        <ul class="swipper__items">
-                            <li class="swipper__items-item"> <!-- 1 элемент -->
-                                <div class="employee">
-                                    <div class="employee-picture">
-                                        <img src="http://placehold.it/360x356" alt="Серёжа Попов">
-                                    </div>
-
-                                    <div class="employee__content">
-                                        <h3 class="employee__content-title">Серёжа Попов</h3>
-                                        <p class="employee__content-subtitle">Основатель питомника</p>
-                                        <p class="employee__content-desc">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
-                                    </div>
-
-                                    <div class="employee__socials">
-                                        <a href="#" class="employee__socials-link">
-                                            фейсбук
-                                        </a>
-                                        <a href="#" class="employee__socials-link">
-                                            твитер
-                                        </a>
-                                        <a href="#" class="employee__socials-link">
-                                            вконтакте
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="swipper__items-item"> <!-- 2 элемент -->
-                                <div class="employee">
-                                    <div class="employee-picture">
-                                        <img src="http://placehold.it/360x356" alt="Серёжа Попов">
-                                    </div>
-
-                                    <div class="employee__content">
-                                        <h3 class="employee__content-title">Серёжа Попов</h3>
-                                        <p class="employee__content-subtitle">Основатель питомника</p>
-                                        <p class="employee__content-desc">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
-                                    </div>
-
-                                    <div class="employee__socials">
-                                        <a href="#" class="employee__socials-link">
-                                            фейсбук
-                                        </a>
-                                        <a href="#" class="employee__socials-link">
-                                            твитер
-                                        </a>
-                                        <a href="#" class="employee__socials-link">
-                                            вконтакте
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="swipper__items-item"> <!-- 3 элемент -->
-                                <div class="employee">
-                                    <div class="employee-picture">
-                                        <img src="http://placehold.it/360x356" alt="Серёжа Попов">
-                                    </div>
-
-                                    <div class="employee__content">
-                                        <h3 class="employee__content-title">Серёжа Попов</h3>
-                                        <p class="employee__content-subtitle">Основатель питомника</p>
-                                        <p class="employee__content-desc">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
-                                    </div>
-
-                                    <div class="employee__socials">
-                                        <a href="#" class="employee__socials-link">
-                                            фейсбук
-                                        </a>
-                                        <a href="#" class="employee__socials-link">
-                                            твитер
-                                        </a>
-                                        <a href="#" class="employee__socials-link">
-                                            вконтакте
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul> 
+                    <div class="employee-wrap">
+                        <div class="employee-wrap__content">
+                            <h3 class="employee-wrap__content-title">Серёжа Попов</h3>
+                            <p class="employee-wrap__content-subtitle default-subtitle">Основатель питомника</p>
+                            <p class="employee-wrap__content-desc">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
+                        
+                        
+                            <div class="employee__socials">
+                                <a href="#" class="employee__socials-link">
+                                    <svg class="employee__socials-icon"  width="7" height="15" viewBox="0 0 7 15">
+                                        <use xlink:href="img/Facebook.svg#facebook-icon"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="employee__socials-link">
+                                    <svg class="employee__socials-icon"  width="21" height="15" viewBox="0 0 21 15">
+                                        <use xlink:href="img/Twitter.svg#twitter-icon"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="employee__socials-link">
+                                    <svg class="employee__socials-icon" width="22" height="13" viewBox="0 0 22 13">
+                                        <use xlink:href="img/vk.svg#vk-icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="swipper__buttons">
+                    <button type="button" class="swipper__buttons-item">
+                        <svg class="swipper__buttons-icon" width="15" height="31" viewBox="0 0 15 31">
+                            <use xlink:href="img/swiper-btn-right.svg#btn-right"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="swipper__buttons-item">
+                        <svg class="swipper__buttons-icon" width="15" height="31" viewBox="0 0 15 31">
+                            <use xlink:href="img/swiper-btn-right.svg#btn-right"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -304,57 +268,59 @@
             <div class="container">
                 <div class="main-questions__inner">
                     <div class="lead__text">
-                        <h2 class="lead__text-title">Вопрос-Ответ</h2>
+                        <h2 class="lead__text-title title">Вопрос-Ответ</h2>
                         <p class="lead__text-subtitle default-subtitle">Мы ответим на самые популярные ваши вопросы</p>
                     </div>
 
-                    <div class="accordion"> 
-                        <div class="accordion__item">
-                            <button class="accordion__item-button">С какого возраста можно забирать котенка из питомника?</button>
-                            <div class="accordion__item-content">
-                                <p>
+                    <ol class="accordion"> 
+                        <li class="accordion-item">
+                            <button type="button" class="accordion-button">С какого возраста можно забирать котенка из питомника?</button>
+                            <div class="accordion__content">
+                                <p class="accordion__content-text">
                                     Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
                                 </p>
-                                <p>
+                                <p class="accordion__content-text">
                                     Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.
                                 </p>
                             </div>
-                        </div>
-                        <div class="accordion__item">
-                            <button class="accordion__item-button">Как зарезервировать котенка?</button>
-                            <div class="accordion__item-content">
-                                <p>
+                        </li>
+
+                        <li class="accordion-item">
+                            <button type="button" class="accordion-button">Как зарезервировать котенка?</button>
+                            <div class="accordion__content">
+                                <p class="accordion__content-text">
                                     Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
                                 </p>
-                                <p>
+                                <p class="accordion__content-text">
                                     Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.
                                 </p>
                             </div>
-                        </div>
-                        <div class="accordion__item">
-                            <button class="accordion__item-button">Можно ли купить кота, если я живу в другом городе?</button>
-                            <div class="accordion__item-content">
-                                <p>
+                        </li>
+
+                        <li class="accordion-item">
+                            <button type="button" class="accordion-button">Можно ли купить кота, если я живу в другом городе?</button>
+                            <div class="accordion__content">
+                                <p class="accordion__content-text">
                                     Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
                                 </p>
-                                <p>
+                                <p class="accordion__content-text">
                                     Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.
                                 </p>
                             </div>
-                        </div>
-                        <div class="accordion__item">
-                            <button class="accordion__item-button">Как подготовить дом к приему нового питомца? </button>
-                            <div class="accordion__item-content">
-                                <p>
+                        </li>
+                        <li class="accordion-item">
+                            <button type="button" class="accordion-button">Как подготовить дом к приему нового питомца? </button>
+                            <div class="accordion__content">
+                                <p class="accordion__content-text">
                                     Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
                                 </p>
-                                <p>
+                                <p class="accordion__content-text">
                                     Так что, чтобы в дома появился психически и физически здоровый котенок, игривый, жизнерадостный, самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.
                                 </p>
                             </div>
-                        </div>
-                    </div> 
-                    <a href="#" class="button">Задать вопрос</a>
+                        </li>
+                    </ol> 
+                    <a href="#" class="main-questions__button button">Задать вопрос</a>
                 </div>
             </div>
         </section>
@@ -362,36 +328,50 @@
         <section class="reviews">
             <div class="container">
                 <div class="reviews__inner">
+                    <h2 class="reviews-title title">Отзывы</h2>
 
-                    <div class="swipper"> <!-- ещё свайпер -->
-                        <ul class="swipper__items">
-
-                            <li class="swipper__items-item"> <!-- 1 элемент -->
+                    <div class="swipper">
+                        <ul class="swipper__list">
+                            <li class="swipper__list-item">
                                 <div class="review">
                                     <div class="review-picture">
-                                        <img src="http://placehold.it/480x330   " alt="Серёжа Попов">
+                                        <img src="img/review.png" alt="Серёжа Попов">
                                     </div>
 
                                     <div class="review__content">
                                         <h3 class="review__content-title">Серёжа Попов</h3>
-                                        <p class="review__content-desc">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
-                                    </div>
+                                        <p class="review__content-desc">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
 
-                                    <div class="review__socials">
-                                        <p class="review__socials-date">24 Мая 2018</p>   
-                                        <a href="#" class="review__socials-link">
-                                            Твиттер
-                                        </a>
-                                        <a href="#" class="review__socials-link">
-                                            Вконтакте
-                                        </a>
+                                        <div class="review__socials">
+                                            <span class="review__socials-date">24 Мая 2018</span>   
+                                            <a href="#" class="review__socials-link">
+                                                <svg class="review__social-icon"  width="21" height="15" viewBox="0 0 21 15">
+                                                    <use xlink:href="img/Twitter.svg#twitter-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a href="#" class="review__socials-link">
+                                                <svg class="review__social-icon" width="22" height="13" viewBox="0 0 22 13">
+                                                    <use xlink:href="img/vk.svg#vk-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
-
-                        </ul> 
+                        </ul>
                     </div>
-
+                </div>
+                <div class="swipper__buttons">
+                    <button type="button" class="swipper__buttons-item">
+                        <svg class="swipper__buttons-icon" width="15" height="31" viewBox="0 0 15 31">
+                            <use xlink:href="img/swiper-btn-right.svg#btn-right"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="swipper__buttons-item">
+                        <svg class="swipper__buttons-icon" width="15" height="31" viewBox="0 0 15 31">
+                            <use xlink:href="img/swiper-btn-right.svg#btn-right"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -402,17 +382,25 @@
         <div class="container">
             <div class="footer__inner">
                 <a href="#" class="logo-link">
-                    <img src="http://placehold.it/59x59" alt="logo">
+                    <svg class="navbar__logo-icon" width="57" height="26" viewBox="0 0 57 26">
+                        <use xlink:href="img/crown.svg#crown"></use>
+                    </svg>
                 </a>
-                <div class="footer__socials">
-                    <a href="#" class="footer__socials-link">
-                        Фейсбук
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <svg class="footer__social-icon"  width="7" height="15" viewBox="0 0 7 15">
+                            <use xlink:href="img/Facebook.svg#facebook-icon"></use>
+                        </svg>
                     </a>
-                    <a href="#" class="footer__socials-link">
-                        Твиттер
+                    <a href="#" class="footer__social-link">
+                        <svg class="footer__social-icon"  width="21" height="15" viewBox="0 0 21 15">
+                            <use xlink:href="img/Twitter.svg#twitter-icon"></use>
+                        </svg>
                     </a>
-                    <a href="#" class="footer__socials-link">
-                        Вконтакте
+                    <a href="#" class="footer__social-link">
+                        <svg class="footer__social-icon" width="22" height="13" viewBox="0 0 22 13">
+                            <use xlink:href="img/vk.svg#vk-icon"></use>
+                        </svg>
                     </a>
                 </div>
                 <a href="#" class="location">Новосибирск, Пушкинский проспект, 19</a>
@@ -420,39 +408,40 @@
             </div>
         </div>
     </footer>
-
+    
     <div class="popup" id="call">
         <div class="popup__content">
             <div class="popup__header">
                 <h2 class="popup__header-title">Заказать звонок</h2>
-                <button href="#" class="close-popup">закрыть</button>
+                <button href="#" class="close-popup">
+                    <svg class="close-popup-icon" width="16" height="16" viewBox="0 0 16 16">
+                        <use xlink:href="img/ic_close.svg#btn-close"></use>
+                    </svg>
+                </button>
             </div>
             <p class="popup__content-text">Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
             <form class="form" action="#">
                 <div class="form__main">
                     <div class="form__data-item">
-                        <p class="form__data-title">
-                            Как к вам обращаться?
-                        </p>
-                        <input class="form__data-input" type="text" name="name" placeholder="Введите имя">
+                        <label class="form__data-title" for="name">Как к вам обращаться?</label>
+                        <input class="form__data-input" type="text" name="name" id="name" placeholder="Введите имя">
                     </div>
                     <div class="form__data-item">
-                        <p class="form__data-title">
-                            Номер телефона
-                        </p>
-                        <input class="form__data-input" type="tel" name="phone" placeholder="+7(___)___-__-__">
+                        <label class="form__data-title" for="phone">Как к вам обращаться?</label>
+                        <input class="form__data-input" id="phone" class="form__data-input" type="tel" name="phone" placeholder="+7(___)___-__-__">
                     </div>
                 </div>
-               
-               <div class="form__footer">
+                
+                <div class="form__footer">
                     <div class="form__footer-agreement">
-                        <p>Нажимая на кнопку «Заказать звонок», я даю <a href="#">согласие на обработку персональных данных</a></p>
+                        <p class="form__footer-text">Нажимая на кнопку «Заказать звонок», я даю <a href="#" class="form__footer-link">согласие на обработку персональных данных</a></p>
                     </div>
                     <button class="form__footer-submit" type="submit">заказать звонок</button>
-               </div>
+                </div>
             </form>
         </div>
     </div> 
-
+    
+    <!-- crooked and unfinished -->
 </body>
 </html>

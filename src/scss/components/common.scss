@@ -1,0 +1,46 @@
+.default-subtitle{
+    font-family: "Roboto";
+    color: $main-color;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.button{
+    display: block;
+    font-size: 16px;
+    padding: 18px 0 17px;
+    font-family: "Roboto";
+    text-align: center;
+    width: 200px;
+    color: #fff;
+    border: 0.5px solid $main-color;
+    transition: all .3s ease;
+    &:hover{
+        background-color: $main-color;
+    }
+}
+
+.title{
+    font-family: "yesevaone";
+    font-weight: 400;
+    margin: 0;
+}
+
+.lead__text{
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.lead__text-title{
+    padding: 23px 0;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.lead__text-subtitle{
+    line-height: 26px;
+    font-family: "Roboto";
+}

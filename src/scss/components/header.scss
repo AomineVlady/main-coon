@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     z-index: 2;
-    
 }
 
 .navbar__menu {
@@ -24,6 +23,7 @@
 }
 
 .navbar__menu-link {
+    font-family: "Roboto";
     color: #fff;
     opacity: 0.2;
     font-size: 18px;
