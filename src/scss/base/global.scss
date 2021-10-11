@@ -42,21 +42,21 @@ input[type="radio"].visually-hidden {
 
 .container {
   position: relative;
-
+  width: 100%;
   max-width: 1286px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .container {
-    width: auto;
+    max-width: 100%;
     margin: 0;
-    padding: 0 27px;
+    padding: 0 41px;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width) {
   .container {
     padding: 0 15px;
   }
