@@ -11,12 +11,12 @@ burger.addEventListener('click', (e)=>{
     e.preventDefault();
     if(!menuOpen){
         burger.classList.add('burger--active');
-        burgerMenu.classList.add('burger__menu--active');
+        // burgerMenu.classList.add('burger__menu--active');
         menuOpen = true;
     }
     else{
         burger.classList.remove('burger--active');
-        burgerMenu.classList.remove('burger__menu--active');
+        // burgerMenu.classList.remove('burger__menu--active');
         menuOpen = false;
     }
 })

@@ -10,81 +10,68 @@
 
 <body class="page">
     <header class="header">
-        <div class="container">
-            <section class="navbar">
-                <nav class="navbar__menu">
-                    <ul class="navbar__menu-list">
-                        <li class="navbar__menu-item">
-                            <a href="#" class="navbar__menu-link">Главная</a>
-                        </li>
-                        <li class="navbar__menu-item">
-                            <a href="#" class="navbar__menu-link">Питомники</a>
-                        </li>
-                        <li class="navbar__menu-item">
-                            <a href="#" class="navbar__menu-link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-            
-                <a href="#" class="navbar__logo-link">
-                    <svg class="navbar__logo-icon" width="57" height="26" viewBox="0 0 57 26">
-                        <use xlink:href="img/crown.svg#crown"></use>
-                    </svg>
-                </a>
-
-                <button type="button" class="burger" id="burger"><span class="burger-line"></span></button>
-            </section>
-
-            <ul class="burger__menu-list">
-                <li class="burger__menu-item">
-                    <a href="#" class="burger__menu-link">Главная</a>
-                </li>
-                <li class="burger__menu--item">
-                    <a href="#" class="burger__menu-link">Питомники</a>
-                </li>
-                <li class="burger__menu-item">
-                    <a href="#" class="burger__menu-link">Контакты</a>
-                </li>
-            </ul>
-
-        </div>
-        <section class="intro">
+        <div class="header__inner">
             <div class="container">
-                <div class="intro__content">
-                    <span class="intro__content-pref default-subtitle">Новосибирск</span>
-                    <h1 class="intro__content-title title">Питомник Мейн-Кунов</h1>
-                    <p class="intro__content-description default-subtitle">Первый питомник с расширенным спектром услуг</p>
-                </div>
+                <section class="navbar">
+                    <nav class="navbar__menu">
+                        <ul class="navbar__menu-list">
+                            <li class="navbar__menu-item">
+                                <a href="#" class="navbar__menu-link">Главная</a>
+                            </li>
+                            <li class="navbar__menu-item">
+                                <a href="#" class="navbar__menu-link">Питомники</a>
+                            </li>
+                            <li class="navbar__menu-item">
+                                <a href="#" class="navbar__menu-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                
+                    <a href="#" class="navbar__logo-link">
+                        <svg class="navbar__logo-icon" width="57" height="26" viewBox="0 0 57 26">
+                            <use xlink:href="img/crown.svg#crown"></use>
+                        </svg>
+                    </a>
+                    <div class="burger-btn">
+                        <button type="button" class="burger" id="burger"><span class="burger-line"></span></button>
+                    </div>
+                    
+                </section>
+            </div>
+            <section class="intro">
+                <div class="container">
+                    <div class="intro__inner">
+                        <div class="intro__content">
+                            <span class="intro__content-pref subtitle">Новосибирск</span>
+                            <h1 class="intro__content-title">Питомник Мейн-Кунов</h1>
+                            <p class="intro__content-description subtitle">Первый питомник с расширенным спектром услуг</p>
+                        </div>
 
-                <a href="#" class="intro-link button">Смотреть котиков</a>
-            
-                <div class="intro__socials">
-                    <ul class="intro__socials-list">
-                        <li class="intro__socials-item">
+                        <a href="#" class="intro-link button">Смотреть котиков</a>
+                    
+                        <div class="intro__socials">
                             <a href="#" class="intro__socials-link">
                                 <svg class="intro__social-icon" width="22" height="13" viewBox="0 0 22 13">
                                     <use xlink:href="img/vk.svg#vk-icon"></use>
                                 </svg>
                             </a>
-                        </li>
-                        <li class="intro__socials-item">
                             <a href="#" class="intro__socials-link">
                                 <svg class="intro__social-icon"  width="21" height="15" viewBox="0 0 21 15">
                                     <use xlink:href="img/Twitter.svg#twitter-icon"></use>
                                 </svg>
                             </a>
-                        </li>
-                        <li class="intro__socials-item">
                             <a href="#" class="intro__socials-link">
                                 <svg class="intro__social-icon"  width="7" height="15" viewBox="0 0 7 15">
                                     <use xlink:href="img/Facebook.svg#facebook-icon"></use>
                                 </svg>
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        <img class="intro-cat" src="img/header-cat.png" alt="main main-coon">
     </header>
     
     <main class="main">
@@ -262,18 +249,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="swipper__buttons">
-                    <button type="button" class="swipper__buttons-item">
-                        <svg class="swipper__buttons-icon" width="15" height="31" viewBox="0 0 15 31">
-                            <use xlink:href="img/swiper-btn-right.svg#btn-right"></use>
-                        </svg>
-                    </button>
-                    <button type="button" class="swipper__buttons-item">
-                        <svg class="swipper__buttons-icon" width="15" height="31" viewBox="0 0 15 31">
-                            <use xlink:href="img/swiper-btn-right.svg#btn-right"></use>
-                        </svg>
-                    </button>
-                </div>
             </div>
         </section>
 
@@ -374,18 +349,6 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="swipper__buttons">
-                    <button type="button" class="swipper__buttons-item">
-                        <svg class="swipper__buttons-icon" width="15" height="31" viewBox="0 0 15 31">
-                            <use xlink:href="img/swiper-btn-right.svg#btn-right"></use>
-                        </svg>
-                    </button>
-                    <button type="button" class="swipper__buttons-item">
-                        <svg class="swipper__buttons-icon" width="15" height="31" viewBox="0 0 15 31">
-                            <use xlink:href="img/swiper-btn-right.svg#btn-right"></use>
-                        </svg>
-                    </button>
                 </div>
             </div>
         </section>

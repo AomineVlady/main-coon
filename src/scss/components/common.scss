@@ -1,13 +1,16 @@
-.page{
-    overflow-x:hidden;
-}
-.default-subtitle{
+.subtitle{
     font-family: "Roboto";
     color: $main-color;
     font-size: 16px;
     font-weight: 300;
     margin: 0;
-    padding-bottom: 20px;
+}
+
+.title{
+    font-family: "yesevaone";
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
 .button{
@@ -25,12 +28,6 @@
     }
 }
 
-.title{
-    font-family: "yesevaone";
-    font-weight: 400;
-    margin: 0;
-}
-
 .lead__text{
     text-align: center;
     font-family: "Roboto";
@@ -46,4 +43,20 @@
 .lead__text-subtitle{
     line-height: 26px;
     font-family: "Roboto";
+}
+
+@media (max-width: $large-width) {
+    .title{
+        margin: 23.44px auto;
+    }
+}
+@media (max-width: $tablet-width) {
+    
+    .title{
+        margin: 30px auto;
+    }
+
+    .subtitle{
+        font-size: 14px;
+    }
 }
