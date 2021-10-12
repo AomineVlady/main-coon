@@ -15,7 +15,7 @@
 
 .button{
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     padding: 18px 0 17px;
     font-family: "Roboto";
     text-align: center;
@@ -31,10 +31,11 @@
 .lead__text{
     text-align: center;
     font-family: "Roboto";
+    margin: 0 auto;
 }
 
 .lead__text-title{
-    padding: 23px 0;
+    margin: 23px 0;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
@@ -42,13 +43,21 @@
 
 .lead__text-subtitle{
     line-height: 26px;
-    font-family: "Roboto";
 }
 
 @media (max-width: $large-width) {
     .title{
         margin: 23.44px auto;
     }
+
+    .button{
+        display: block;
+        font-size: 12px;
+        padding: 16px 0 15px;
+        text-align: center;
+        width: 141px;
+    }
+
 }
 @media (max-width: $tablet-width) {
     
@@ -58,5 +67,11 @@
 
     .subtitle{
         font-size: 14px;
+        line-height: 19px;
+    }
+
+    .button{
+        font-size: 12px;
+        width: 141px;
     }
 }

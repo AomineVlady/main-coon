@@ -1,23 +1,13 @@
 .main{
     position: relative;
-    z-index: 5;
 }
 
 .main-pets{
     background-color: #1F1C1D;
     padding: 200px 0 30px;
 }
-
-.main-pets__inner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .main-pets_lead{
     width: 50%;
-    margin: 0 auto;
     padding: 0 40px;
 }
 
@@ -25,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .picture__buttons-item{
@@ -46,22 +37,99 @@
 }
 
 .picture__list{
+    margin: 0 auto;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 530px 530px;
-    grid-template-rows: 214px 241px;
-    align-content: center; 
-    justify-items: center;
-    justify-content: center;
+    position: relative;
+    max-height: 530px;
     overflow: hidden;
-    row-gap: 30px;
-    padding: 23px 0;
+    padding: 23px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    transition: all .3s ease;
 }
 
 .picture__list-item{
-    grid-auto-flow: dense;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 10px 14px 0;
+    transition: inherit;
+}
+
+.picture__list-item img{
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .pets-btn{
-    margin-top: 50px;
+    margin: 30px auto 0;
+}
+
+@media (max-width: $large-width) {
+    .main-pets{
+        background-color: #1F1C1D;
+        padding: 100px 0 30px;
+    }
+
+    .main-pets_lead{
+        width: 80%;
+        padding: 0 15px;
+    }
+
+    .picture__list{
+        margin: 0 auto;
+        padding: 23px 6%;
+        overflow: visible;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .picture__list-item{
+        position: absolute;
+        z-index: 88;
+        top:0;
+        left: 0;
+        right: 0;
+        padding: 30% 0;
+        margin: 0;
+        max-height: 100%;
+        &:not(:first-child){
+            position: static;
+            overflow: visible;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin:0;
+            z-index: 86;
+        }
+    }
+    
+    .picture__list-item>img:first-child{
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+}
+  
+@media (max-width: $tablet-width) {
+    .main-pets{
+        background-color: #1F1C1D;
+        padding: 100px 0 30px;
+    }
+
+    .main-pets_lead{
+        width: 100%;
+        padding: 0;
+    }
+
+    .picture__list-item:not(:first-child){
+        visibility: hidden;
+    }
 }
