@@ -6,37 +6,76 @@
     width: 50%;
     margin: 0 auto;
     text-align: center;
-    padding: 0 50px;
+    padding: 0 40px;
+}
+
+.us-team-subtitle{
+    line-height: 26px;
+    padding: 30px;
 }
 
 .employee{
-    height: 400px;
+    position: relative;
+    padding: 23px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
 }
 
 .employee-picture{
    position: relative;
+   top:0;
+   left: 5%;
 }
 
 .employee img{
-    position: absolute;
-    left: 125px;
-    z-index: 9;
     background-color: #1F1C1D;
+    max-height: 100%;
+}
+
+.employee__swap-buttons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 5%;
+    left: 5%;
+    bottom: 50%;
+}
+
+.employee__swap-button{
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+
+.arrow-right{
+    stroke: $main-color;
+    opacity: .5;
+    transition: all .3s ease;
+}
+.arrow-left{
+    stroke: $main-color;
+    opacity: .5;
+    transition: all .3s ease;
+}
+
+.employee__swap-button{
+    &:hover .arrow-right, &:hover .arrow-left{
+        stroke: #fff;
+        opacity: 1;
+    }
 }
 
 .employee-wrap{
-    width: 60%;
+    width: 50%;
     border: 0.5px solid #A07B50;
     padding: 23px 34px;
-    position: absolute;
-    right: 70px;
-    z-index: 7;
-
 }
 
 .employee-wrap__content{
     background-color: #1F1C1D;
-    padding: 70px 100px;
+    padding: 70px;
 }
 
 .employee-wrap__content-title{
@@ -44,11 +83,9 @@
     font-size: 24px;
     line-height: 28px;
     color: $main-color;
+    margin: 10px 0;
 }
 
-.employee-wrap__content-subtitle{
-
-}
 
 .employee-wrap__content-desc{
     font-family: "Roboto";
@@ -58,6 +95,7 @@
     line-height: 25px;
     color: #fff;
     opacity: .7;
+    margin: 18px 0;
 }
 
 .employee__socials{
@@ -76,4 +114,133 @@
 .employee__socials-icon{
     fill: #fff;
     transition: all .3s ease;
+}
+
+@media (max-width: $large-width) {
+    .us-team{
+        padding: 80px 0;
+    }
+    
+    .us-team-lead{
+        width: 90%;
+        padding: 0 30px;
+    }
+    
+    .employee{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .employee-picture{ 
+       position: absolute;
+       display: block;
+       left: 55%;
+       right: 1%;
+       top: 65%;
+    }
+
+    .employee img{
+        width: 80%;
+    }
+
+    .employee-wrap{
+        width: 100%;
+    }
+    
+    .employee-wrap__content{
+        padding: 70px 70px 60px; 
+    }
+    
+    .employee__swap-buttons{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        right: 3%;
+        left: 48%;
+        bottom: -20%;
+    }
+    
+    .employee__swap-button{
+        background: none;
+        border:none;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .us-team{
+        padding: 60px 0;
+    }
+    
+    .us-team-lead{
+        width: 100%;
+        padding: 0;
+    }
+
+    .us-team-subtitle{
+        line-height: 19px;
+        padding: 0 10px;
+    }
+    
+    .employee{
+        padding-top: 35%;
+        padding-bottom: 0;
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .employee-wrap{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+
+    .employee-wrap__content{
+        padding: 70px 10px 15px; 
+        text-align: center;
+    }
+
+    .employee-wrap__content-title{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    
+    .employee-wrap__content-desc{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .employee-picture{ 
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       left: 0;
+       right: 0;
+       top: 0;
+    }
+    .employee-picture img{
+        position: absolute;
+        z-index: 99;
+        max-height: none;
+        width: 126px;    
+    }
+
+    .employee__socials{
+        justify-content: center;
+    }
+    
+    .employee__socials-link{
+        padding:7px;
+    }
+
+    .employee__swap-buttons{
+        right: 20%;
+        left: 20%;
+        top: 8%;
+        bottom: 0;
+    }
 }

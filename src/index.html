@@ -108,7 +108,6 @@
             </div>
         </section>
     
-
         <!-- Особенности породы -->
         <section class="main-breeds">
             <div class="container">
@@ -141,7 +140,6 @@
                 </div>
             </div>
         </section> 
-
         
         <!-- Почему именно мы -->
         <section class="main-benefits">
@@ -183,52 +181,69 @@
                     <h2 class="main-care-title title">Об уходе за Мейн-Куном</h2>
 
                     <ul class="care__list">
-                        <li href="#" class="care__list-item">
+                        <li class="care__list-item">
                             <a href="#" class="care__list-content">
                                 <h3 class="care__list-title">Шерсть</h3>
                                 <p class="care__list-subtitle">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной</p>
                             </a>
                         </li>
-                        <li href="#" class="care__list-item">
-                            <a class="care__list-content">
+                        <li class="care__list-item">
+                            <a href="#" class="care__list-content">
                                 <h3 class="care__list-title">Когти</h3>
                                 <p class="care__list-subtitle">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку</p>
                             </a>
                         </li>
-                        <li href="#" class="care__list-item">
-                            <a class="care__list-content">
+                        <li class="care__list-item">
+                            <a href="#"  class="care__list-content">
                                 <h3 class="care__list-title">Уши и глаза</h3>
                                 <p class="care__list-subtitle">Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев, ведь это может быть признаками заболевания</p>
                             </a>
                         </li>
-                        <li href="#" class="care__list-item">
-                            <a class="care__list-content">
+                        <li class="care__list-item">
+                            <a href="#"  class="care__list-content">
                                 <h3 class="care__list-title">Питание</h3>
                                 <p class="care__list-subtitle">В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но выбирать только вам</p>
                             </a>
                         </li>
-                    </div>
+                    </ul>
 
                 </div>
             </div>
         </section>
+
         <!-- сотрудники -->
         <section class="us-team">
             <div class="container">
                 <div class="us-team-lead lead__text">
                     <h2 class="lead__text-title title">Наша команда</h2>
-                    <p class="lead__text-subtitle default-subtitle">Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии</p>
+                    <p class="us-team-subtitle subtitle">Все сотрудники нашего питомника  дипломированые специалисты в области фелинологии и ветеринарии</p>
                 </div>
                 
                 <div class="employee">
                     <div class="employee-picture">
-                        <img src="img/employe.png" width="360" height="356" alt="Серёжа Попов">
+                        <img src="img/employe.png" alt="Серёжа Попов">
+                    </div>
+
+                    <div class="employee__swap-buttons">
+                        <button class="employee__swap-button swap-button-left" type="button">
+                            <svg class="arrow-left" width="15" height="31" viewBox="0 0 15 31">
+                                <use xlink:href="img/arrow-left.svg#arrow-left">
+                                </use>
+                            </svg>
+                        </button>
+                        <button class="employee__swap-button swap-button-left" type="button">
+                            <svg class="arrow-right" width="15" height="31" viewBox="0 0 15 31">
+                                <use xlink:href="img/arrow-right.svg#arrow-right">
+                                </use>
+                            </svg>
+                        </button>
+                        
                     </div>
 
                     <div class="employee-wrap">
                         <div class="employee-wrap__content">
                             <h3 class="employee-wrap__content-title">Серёжа Попов</h3>
-                            <p class="employee-wrap__content-subtitle default-subtitle">Основатель питомника</p>
+                            <p class="employee-wrap__content-subtitle subtitle">Основатель питомника</p>
                             <p class="employee-wrap__content-desc">Наш питомник занимается разведением Мейн-Кунов на протяжениие 15 лет. Мы в ответе за каждого приобретенного вами питомца</p>
                         
                         
@@ -312,11 +327,11 @@
                             </div>
                         </li>
                     </ol> 
-                    <a href="#" class="main-questions__button button">Задать вопрос</a>
+                    <a href="#" id="ask-btn" class="main-questions__button button">Задать вопрос</a>
                 </div>
             </div>
         </section>
-
+        <!-- отзывы -->
         <section class="reviews">
             <div class="container">
                 <div class="reviews__inner">
@@ -357,7 +372,6 @@
         </section>
 
     </main>
-</div> 
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -397,7 +411,7 @@
         <div class="popup__content">
             <div class="popup__header">
                 <h2 class="popup__header-title">Заказать звонок</h2>
-                <button href="#" class="close-popup">
+                <button class="close-popup" id="close-popup">
                     <svg class="close-popup-icon" width="16" height="16" viewBox="0 0 16 16">
                         <use xlink:href="img/ic_close.svg#btn-close"></use>
                     </svg>
@@ -412,7 +426,7 @@
                     </div>
                     <div class="form__data-item">
                         <label class="form__data-title" for="phone">Как к вам обращаться?</label>
-                        <input class="form__data-input" id="phone" class="form__data-input" type="tel" name="phone" placeholder="+7(___)___-__-__">
+                        <input class="form__data-input" id="phone" type="tel" name="phone" placeholder="+7(___)___-__-__">
                     </div>
                 </div>
                 
@@ -425,7 +439,6 @@
             </form>
         </div>
     </div> 
-    
-    <!-- crooked and unfinished -->
+
 </body>
 </html>
