@@ -26,32 +26,12 @@
 }
 
 .features__content-picture{
-    &::before{
-        content: '';
-        position: absolute;
-        width: 519px;
-        height: 519px;
-        background-color: $body-color;
-        border-radius: 500px;
-        left: 30%;
-        top: 30%;
-         
-    }
-    &::after{
-        content: '';
-        position: absolute;
-        width:630px;
-        height: 630px;
-        border: 0.5px solid #A07B50;
-        border-radius: 1000px;
-        left: 20%;
-        top: 20%;
-    }
-}
-
-.features__content-picture{
+    float: left;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
     max-height: 100%;
-    object-fit: none;
+    max-width: 623px;
+    object-fit: cover;
 }    
 .features__content-list{
     list-style-type:none;

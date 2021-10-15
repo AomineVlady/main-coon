@@ -12,9 +12,9 @@
     <header class="header">
         <div class="header__inner">
             <div class="container">
-                <section class="navbar">
+                <div class="navbar">
                     <nav class="navbar__menu">
-                        <ul class="navbar__menu-list">
+                        <ul class="navbar__menu-list navbar__menu--active">
                             <li class="navbar__menu-item">
                                 <a href="#" class="navbar__menu-link">Главная</a>
                             </li>
@@ -33,10 +33,10 @@
                         </svg>
                     </a>
                     <div class="burger-btn">
-                        <button type="button" class="burger" id="burger"><span class="burger-line"></span></button>
+                        <button type="button" class="burger burger--active" id="burger"><span class="burger-line"></span></button>
                     </div>
                     
-                </section>
+                </div>
             </div>
             <section class="intro">
                 <div class="container">
@@ -89,22 +89,36 @@
                     <button class="picture__buttons-item">Кошки</button>
                     <button class="picture__buttons-item">Котята</button>
                 </div>
-            <div class="pictures">
+                <div class="pictures">
+                    <ul class="picture__list">
+                        <li class="picture__list-item">
+                            <img class="picture__list-img" src="img/pet2.png" alt="Питомец">
+                        </li>
+                        <li class="picture__list-item">
+                            <img class="picture__list-img" src="img/pet1.png" alt="Питомец">
+                        </li>
+                        <li class="picture__list-item">
+                            <img class="picture__list-img" src="img/pet3.png" alt="Питомец">
+                        </li>
+                    </ul>
 
-            </div>
-                <ul class="picture__list">
-                    <li class="picture__list-item">
-                        <img class="picture__list-img" src="img/pet2.png" alt="Питомец">
-                    </li>
-                    <li class="picture__list-item">
-                        <img class="picture__list-img" src="img/pet1.png" alt="Питомец">
-                    </li>
-                    <li class="picture__list-item">
-                        <img class="picture__list-img" src="img/pet3.png" alt="Питомец">
-                    </li>
-                </ul>
+                    <div class="pets__swap-buttons">
+                        <button class="swap-button swap-button-left" type="button">
+                            <svg class="arrow-icon" width="15" height="31" viewBox="0 0 15 31">
+                                <use xlink:href="img/arrow-left.svg#arrow-left">
+                                </use>
+                            </svg>
+                        </button>
+                        <button class="swap-button swap-button-left" type="button">
+                            <svg class="arrow-icon" width="15" height="31" viewBox="0 0 15 31">
+                                <use xlink:href="img/arrow-right.svg#arrow-right">
+                                </use>
+                            </svg>
+                        </button>
+                    </div>
 
-                <a href="#" class="pets-btn button">Смотреть больше</a>
+                    <a href="#" class="pets-btn button">Смотреть больше</a>
+                </div>
             </div>
         </section>
     
@@ -116,11 +130,8 @@
                         <h2 class="lead__text-title title">Особенности породы</h2>
                         <p class="lead__text-subtitle subtitle">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца, вы получите умное животное, которому нет равных</p>
                     </div>
-
                     <div class="features__content">
-                        <div class="features__content-picture">
                             <img class="features__content-picture" src="img/котя3.png" alt="котя">
-                        </div>
 
                         <ul class="features__content-list">
                             <li class="features__content-item">
@@ -225,19 +236,18 @@
                     </div>
 
                     <div class="employee__swap-buttons">
-                        <button class="employee__swap-button swap-button-left" type="button">
-                            <svg class="arrow-left" width="15" height="31" viewBox="0 0 15 31">
+                        <button class="swap-button swap-button-left" type="button">
+                            <svg class="arrow-icon" width="15" height="31" viewBox="0 0 15 31">
                                 <use xlink:href="img/arrow-left.svg#arrow-left">
                                 </use>
                             </svg>
                         </button>
-                        <button class="employee__swap-button swap-button-left" type="button">
-                            <svg class="arrow-right" width="15" height="31" viewBox="0 0 15 31">
+                        <button class="swap-button swap-button-left" type="button">
+                            <svg class="arrow-icon" width="15" height="31" viewBox="0 0 15 31">
                                 <use xlink:href="img/arrow-right.svg#arrow-right">
                                 </use>
                             </svg>
                         </button>
-                        
                     </div>
 
                     <div class="employee-wrap">
@@ -274,14 +284,13 @@
         <section class="main-questions">
             <div class="container">
                 <div class="main-questions__inner">
-                    <div class="lead__text">
+                    <div class="main-question-lead lead__text">
                         <h2 class="lead__text-title title">Вопрос-Ответ</h2>
-                        <p class="lead__text-subtitle default-subtitle">Мы ответим на самые популярные ваши вопросы</p>
+                        <p class="main-question-desc subtitle">Мы ответим на самые популярные ваши вопросы</p>
                     </div>
-
                     <ol class="accordion"> 
                         <li class="accordion-item">
-                            <button type="button" class="accordion-button">С какого возраста можно забирать котенка из питомника?</button>
+                            <button type="button" class="accordion-button accordion-button--active">С какого возраста можно забирать котенка из питомника?</button>
                             <div class="accordion__content">
                                 <p class="accordion__content-text">
                                     Есть важная причина, почему котенка стоит забирать домой только после трех месяцев, — это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4 недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и инфекций.
@@ -336,15 +345,13 @@
             <div class="container">
                 <div class="reviews__inner">
                     <h2 class="reviews-title title">Отзывы</h2>
-
-                    <div class="swipper">
-                        <ul class="swipper__list">
-                            <li class="swipper__list-item">
+                    <div class="reviews-swipper">
+                        <ul class="reviews-swipper__list">
+                            <li class="reviews-swipper__list-item">
                                 <div class="review">
                                     <div class="review-picture">
                                         <img src="img/review.png" alt="Серёжа Попов">
                                     </div>
-
                                     <div class="review__content">
                                         <h3 class="review__content-title">Серёжа Попов</h3>
                                         <p class="review__content-desc">Я выражаю огромную благодарность вашему питомнику.  Мой Феликс невероятно умен и воспитан. Огромным плюсом питомника является возможность консультироваться в любое время</p>
@@ -366,11 +373,24 @@
                                 </div>
                             </li>
                         </ul>
+                        <div class="review__swap-buttons">
+                            <button class="swap-button swap-button-left" type="button">
+                                <svg class="arrow-icon" width="15" height="31" viewBox="0 0 15 31">
+                                    <use xlink:href="img/arrow-left.svg#arrow-left">
+                                    </use>
+                                </svg>
+                            </button>
+                            <button class="swap-button swap-button-left" type="button">
+                                <svg class="arrow-icon" width="15" height="31" viewBox="0 0 15 31">
+                                    <use xlink:href="img/arrow-right.svg#arrow-right">
+                                    </use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
     <footer class="footer">
         <div class="container">
@@ -434,7 +454,7 @@
                     <div class="form__footer-agreement">
                         <p class="form__footer-text">Нажимая на кнопку «Заказать звонок», я даю <a href="#" class="form__footer-link">согласие на обработку персональных данных</a></p>
                     </div>
-                    <button class="form__footer-submit" type="submit">заказать звонок</button>
+                    <button class="form__footer-button" type="submit">заказать звонок</button>
                 </div>
             </form>
         </div>

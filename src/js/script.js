@@ -5,20 +5,27 @@ document.querySelectorAll('.accordion-button').forEach(item=>{
     });
 });
 
+
 //burger-menu
-const burger = document.querySelector('.burger');
-const burgerMenu = document.querySelector('.burger__menu-list')
+const burger = document.querySelector('#burger');
+const burgerMenu = document.querySelector('.navbar__menu-list')
 let menuOpen = false;
+
+(function (){
+    burgerMenu.classList.remove('navbar__menu--active');
+    burger.classList.remove('burger--active');
+}());
+
 burger.addEventListener('click', (e)=>{
     e.preventDefault();
     if(!menuOpen){
         burger.classList.add('burger--active');
-        // burgerMenu.classList.add('burger__menu--active');
+        burgerMenu.classList.add('navbar__menu--active');
         menuOpen = true;
     }
     else{
         burger.classList.remove('burger--active');
-        // burgerMenu.classList.remove('burger__menu--active');
+        burgerMenu.classList.remove('navbar__menu--active');
         menuOpen = false;
     }
 })

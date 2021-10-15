@@ -28,6 +28,22 @@
     }
 }
 
+.arrow-icon{
+    stroke: $main-color;
+    opacity: .5;
+    transition: all .3s ease;
+}
+
+.swap-button{
+    background: none;
+    border:none;
+    cursor: pointer;
+    &:hover .arrow-icon{
+        stroke: #fff;
+        opacity: 1;
+    }
+}
+
 .lead__text{
     text-align: center;
     font-family: "Roboto";

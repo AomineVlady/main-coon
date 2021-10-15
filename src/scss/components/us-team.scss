@@ -43,30 +43,6 @@
     bottom: 50%;
 }
 
-.employee__swap-button{
-    background: none;
-    border:none;
-    cursor: pointer;
-}
-
-.arrow-right{
-    stroke: $main-color;
-    opacity: .5;
-    transition: all .3s ease;
-}
-.arrow-left{
-    stroke: $main-color;
-    opacity: .5;
-    transition: all .3s ease;
-}
-
-.employee__swap-button{
-    &:hover .arrow-right, &:hover .arrow-left{
-        stroke: #fff;
-        opacity: 1;
-    }
-}
-
 .employee-wrap{
     width: 50%;
     border: 0.5px solid #A07B50;
@@ -118,7 +94,10 @@
 
 @media (max-width: $large-width) {
     .us-team{
-        padding: 80px 0;
+        padding: 80px 0 90px;
+    }
+    .us-team-subtitle{
+        padding: 10px 0;
     }
     
     .us-team-lead{
@@ -129,6 +108,7 @@
     .employee{
         flex-direction: column-reverse;
         align-items: center;
+        padding-bottom: 200px;
     }
     
     .employee-picture{ 
@@ -136,7 +116,7 @@
        display: block;
        left: 55%;
        right: 1%;
-       top: 65%;
+       top: 48%;
     }
 
     .employee img{
@@ -152,18 +132,9 @@
     }
     
     .employee__swap-buttons{
-        position: absolute;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         right: 3%;
         left: 48%;
-        bottom: -20%;
-    }
-    
-    .employee__swap-button{
-        background: none;
-        border:none;
+        bottom: 80px;
     }
 }
 

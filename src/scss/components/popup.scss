@@ -10,6 +10,7 @@
     height: 100%;
     background: rgba($color: #674C33, $alpha: .5);
     transition: all .5s ease;
+    cursor: pointer;
 }
 
 .popup--active{
@@ -19,6 +20,7 @@
 }
 
 .popup__content{
+    cursor: default;
     background-color: #fff;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -66,14 +68,15 @@
     font-size: 18px;
     color: #674C33;
     font-weight: 500;
+    line-height: 21px;
     font-family: 'Roboto';
 }
 
 .form{
-display: flex;
-flex-direction: column;
-align-items: stretch;
-justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 .form__main{
@@ -122,13 +125,15 @@ justify-content: space-between;
 .form__footer-text{
     color: $main-color;
     font-size: 12px;
+    line-height: 16px;
 }
 
 .form__footer-link{
+    text-decoration: underline;
     color: $main-color;
 }
 
-.form__footer-submit{
+.form__footer-button{
     text-transform: uppercase; 
     font-size: 14px;
     font-family: "Roboto";
@@ -136,6 +141,7 @@ justify-content: space-between;
     color: #fff;
     border: 0.5px solid $main-color;
     width: 45%;
+    cursor: pointer;
     background-color: $main-color;
     padding: 22px 50px;
     transition: all .3s ease;
@@ -148,4 +154,69 @@ justify-content: space-between;
         background-color: #fff;
         color: $main-color;
     }
+}
+
+@media (max-width: $large-width) {
+    .popup__content{
+        background-color: #fff;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        position: absolute;
+        width: 284px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+    }
+
+    .form__data-item{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form__main{
+        flex-direction: column-reverse;
+    }
+
+    .form__footer{
+        padding: 20px 0 0 0;
+        flex-direction: column-reverse;
+    }
+
+    .form__footer-agreement{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .popup__header-title{
+        font-size: 18px;
+    }
+
+    .popup__content-text {
+        font-size: 16px;
+    }
+
+    .form__data-title,.form__data-input{
+        font-size: 14px;
+    }
+
+    .form__footer-text{
+        font-size: 10px;
+    }
+
+    .form__footer-button{ 
+        font-size: 11px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form__footer-text{
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+
 }
