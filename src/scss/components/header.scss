@@ -80,9 +80,6 @@
     transition: all .3s ease;
     margin: 0;
     padding: 0;
-    &:hover .burger-line, &:hover .burger-line::before, &:hover .burger-line::after{
-        background-color: #fff;
-    }
 }
 
 .burger-line {
@@ -118,11 +115,9 @@
 
 .burger.burger--active .burger-line::before{
     transform: rotate(45deg);
-    background-color: #fff;
 }
 .burger.burger--active .burger-line::after{
     transform: rotate(-45deg);
-    background-color: #fff;
 }
 
 
@@ -267,7 +262,7 @@
 }
 
 @media (max-width: $tablet-width) {
-    
+
     .navbar__menu{
         display: block;
         width: 100%;
@@ -324,9 +319,13 @@
         right: 0;
         top: 31px;
         width: auto;
-        display: block;
+        display: none;
         align-items: normal;
         justify-content: normal;
+    }
+
+    .block{
+        display: block;
     }
 
     .intro{

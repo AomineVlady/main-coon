@@ -14,6 +14,7 @@ let menuOpen = false;
 (function (){
     burgerMenu.classList.remove('navbar__menu--active');
     burger.classList.remove('burger--active');
+    document.querySelector('.burger-btn').classList.add('block');
 }());
 
 burger.addEventListener('click', (e)=>{
