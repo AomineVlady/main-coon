@@ -154,8 +154,7 @@
     }
     
     .employee{
-        padding-top: 35%;
-        padding-bottom: 0;
+        padding:0;
         position: static;
         flex-direction: column;
         align-items: center;
@@ -194,9 +193,7 @@
        top: 0;
     }
     .employee-picture img{
-        position: absolute;
-        z-index: 99;
-        max-height: none;
+        transform: translateY(50%);
         width: 126px;    
     }
 
@@ -211,7 +208,7 @@
     .employee__swap-buttons{
         right: 20%;
         left: 20%;
-        top: 8%;
-        bottom: 0;
+        bottom: 19%;
+        height: 50%;
     }
 }

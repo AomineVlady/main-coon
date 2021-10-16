@@ -31,11 +31,13 @@
         background-color: $main-color;
     }&:hover .benefits__content-icon{
         fill: #fff;
+        stroke: $main-color;
     }
 }
 
 .benefits__content-icon{
     fill: $main-color;
+    stroke: #1F1C1D;
     transition: all .3s ease;
 }
 
