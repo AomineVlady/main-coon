@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Main-coon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#151313"/>
     <title>main-coon</title>
 </head>
 <body class="page">
@@ -214,9 +215,9 @@
                 </div>
 
                 <div class="picture__buttons">
-                    <button class="picture__buttons-item">Коты</button>
-                    <button class="picture__buttons-item">Кошки</button>
-                    <button class="picture__buttons-item">Котята</button>
+                    <button type="button" class="picture__buttons-item">Коты</button>
+                    <button type="button" class="picture__buttons-item">Кошки</button>
+                    <button type="button" class="picture__buttons-item">Котята</button>
                 </div>
                 <div class="pictures">
                     <ul class="picture__list">
@@ -278,6 +279,9 @@
                     </div>
                     <div class="features__content">
                         <picture>
+                            <source type="image/webp" media="(max-width: 767px)" srcset="img/breeds-cat-mobile@1x.webp 1x, img/breeds-cat-mobile@2x.webp 2x">
+                            <source type="image/webp" media="(max-width: 1365px)" srcset="img/breeds-cat-tablet@1x.webp 1x, img/breeds-cat-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="img/breeds-cat-desktop@1x.webp 1x, img/breeds-cat-desktop@2x.webp 2x">
                             <source media="(max-width: 767px)" srcset="img/breeds-cat-mobile@1x.png 1x, img/breeds-cat-mobile@2x.png 2x">
                             <source media="(max-width: 1365px)" srcset="img/breeds-cat-tablet@1x.png 1x, img/breeds-cat-tablet@2x.png 2x">
                             <img class="features__content-picture" src="img/breeds-cat-desktop@1x.png" srcset="img/breeds-cat-desktop@2x.png 2x" alt="Особенности породы">
@@ -587,7 +591,7 @@
         <div class="popup__content">
             <div class="popup__header">
                 <h2 class="popup__header-title">Заказать звонок</h2>
-                <button class="close-popup" id="close-popup">
+                <button class="close-popup" id="close-popup" type="button">
                     <svg class="close-popup-icon" width="16" height="16" viewBox="0 0 16 16">
                         <use xlink:href="#btn-close"></use>
                     </svg>
