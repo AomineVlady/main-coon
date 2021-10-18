@@ -10,13 +10,13 @@
     margin: 0 0 50px 0;
 }
 
-.reviews-swipper{
+.reviews__swipper{
     position: relative;
     margin:0 auto;
     width: 100%;
 }
 
-.reviews-swipper__list{
+.reviews__swipper__list{
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
@@ -34,7 +34,7 @@
     top: 0;
 }
 
-.reviews-swipper__list-item{
+.reviews__swipper__list-item{
     position: relative;
     min-width: 100%;
     margin: 0 auto;
@@ -48,7 +48,7 @@
     margin:0 auto;
 }
 
-.review-picture{
+.review__picture{
     z-index: 4;
 }
 
@@ -80,14 +80,14 @@
     margin: 0;
 }
 
-.review__socials{
+.review__content__socials{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 37px 24px;
 }
 
-.review__socials-date{
+.review__content__socials-date{
     font-size: 12px;
     font-family: "Roboto";
     line-height: 19px;
@@ -96,7 +96,7 @@
     opacity: .9;
 }
 
-.review__socials-link{
+.review__content__socials-link{
     margin:0 8px;
     border: 0.5px solid $main-color;
     padding: 6px 4px 2px 2px;
@@ -104,12 +104,12 @@
     &:hover{
         border: 0.5px solid #fff;
     }
-    &:hover .review__social-icon{
+    &:hover .review__content__socials-icon{
         fill: #fff;
     }
 }
 
-.review__social-icon{
+.review__content__socials-icon{
     transition: all .3s ease;
     fill: $main-color;
 }
@@ -128,7 +128,7 @@
         width: 100%;
     }
 
-    .review-picture img{
+    .review__picture img{
         max-width: 302px;
         object-fit: cover;
     }
@@ -142,7 +142,7 @@
         transform: translateY(-90px);
         z-index: 3;
     }
-    .review__socials {
+    .review__content__socials {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -157,14 +157,14 @@
         left: -30px;
     }
 
-    .reviews-swipper__list-item{
+    .reviews__swipper__list-item{
         padding: 0 20px;
     }
 
 }
 
 @media (max-width: $tablet-width) {
-    .review-picture img{
+    .review__picture img{
         max-width: 242px;
     }
     .reviews{
@@ -181,7 +181,7 @@
         background-color: #181617;
         z-index: 2;
     }
-    .review__socials {
+    .review__content__socials {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -200,7 +200,7 @@
         z-index: 6;
     }
 
-    .reviews-swipper__list-item{
+    .reviews__swipper__list-item{
         padding: 0;
     }
 }

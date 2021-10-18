@@ -1,20 +1,20 @@
-.us-team{
+.team{
     padding: 70px 0;
 }
 
-.us-team-lead{
+.team__lead{
     width: 50%;
     margin: 0 auto;
     text-align: center;
     padding: 0 40px;
 }
 
-.us-team-subtitle{
+.team__lead-subtitle{
     line-height: 26px;
     padding: 30px;
 }
 
-.employee{
+.team__employee{
     position: relative;
     padding: 23px 0;
     display: flex;
@@ -22,18 +22,18 @@
     justify-content: center; 
 }
 
-.employee-picture{
+.team__employee-picture{
    position: relative;
    top:0;
    left: 5%;
 }
 
-.employee img{
+.team__employee img{
     background-color: #1F1C1D;
     max-height: 100%;
 }
 
-.employee__swap-buttons{
+.team__employee__swap-buttons{
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -43,18 +43,18 @@
     bottom: 50%;
 }
 
-.employee-wrap{
+.team__employee__wrap{
     width: 50%;
     border: 0.5px solid #A07B50;
     padding: 23px 34px;
 }
 
-.employee-wrap__content{
+.team__employee__wrap-content{
     background-color: #1F1C1D;
     padding: 70px;
 }
 
-.employee-wrap__content-title{
+.team__employee__wrap-title{
     font-family: "Roboto";
     font-size: 24px;
     line-height: 28px;
@@ -63,7 +63,7 @@
 }
 
 
-.employee-wrap__content-desc{
+.team__employee__wrap-desc{
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
@@ -74,44 +74,44 @@
     margin: 18px 0;
 }
 
-.employee__socials{
+.team__employee__socials{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.employee__socials-link{
+.team__employee__socials-link{
     padding: 10px 8px;
     &:hover .employee__socials-icon{
         fill: $main-color;
     }
 }
 
-.employee__socials-icon{
+.team__employee__socials-icon{
     fill: #fff;
     transition: all .3s ease;
 }
 
 @media (max-width: $large-width) {
-    .us-team{
+    .team{
         padding: 80px 0 90px;
     }
-    .us-team-subtitle{
+    .team__lead-subtitle{
         padding: 10px 0;
     }
     
-    .us-team-lead{
+    .team__lead{
         width: 90%;
         padding: 0 30px;
     }
     
-    .employee{
+    .team__employee{
         flex-direction: column-reverse;
         align-items: center;
         padding-bottom: 200px;
     }
     
-    .employee-picture{ 
+    .team__employee-picture{ 
        position: absolute;
        display: block;
        left: 55%;
@@ -119,19 +119,19 @@
        top: 48%;
     }
 
-    .employee img{
+    .team__employee img{
         width: 80%;
     }
 
-    .employee-wrap{
+    .team__employee__wrap{
         width: 100%;
     }
     
-    .employee-wrap__content{
+    .team__employee__wrap-content{
         padding: 70px 70px 60px; 
     }
     
-    .employee__swap-buttons{
+    .team__employee__swap-buttons{
         right: 3%;
         left: 48%;
         bottom: 80px;
@@ -139,21 +139,21 @@
 }
 
 @media (max-width: $tablet-width) {
-    .us-team{
+    .team{
         padding: 60px 0;
     }
     
-    .us-team-lead{
+    .team__lead{
         width: 100%;
         padding: 0;
     }
 
-    .us-team-subtitle{
+    .team__lead-subtitle{
         line-height: 19px;
         padding: 0 10px;
     }
     
-    .employee{
+    .team__employee{
         padding:0;
         position: static;
         flex-direction: column;
@@ -161,29 +161,29 @@
         justify-content: center;
     }
     
-    .employee-wrap{
+    .team__employee__wrap{
         width: 100%;
         border: none;
         padding: 0;
     }
 
-    .employee-wrap__content{
+    .team__employee__wrap-content{
         padding: 70px 10px 15px; 
         text-align: center;
     }
 
-    .employee-wrap__content-title{
+    .team__employee__wrap-title{
         font-size: 18px;
         line-height: 20px;
     }
     
     
-    .employee-wrap__content-desc{
+    .team__employee__wrap-desc{
         font-size: 14px;
         line-height: 19px;
     }
     
-    .employee-picture{ 
+    .team__employee-picture{ 
        position: relative;
        display: flex;
        align-items: center;
@@ -192,20 +192,20 @@
        right: 0;
        top: 0;
     }
-    .employee-picture img{
+    .team__employee-picture img{
         transform: translateY(50%);
         width: 126px;    
     }
 
-    .employee__socials{
+    .team__employee__socials{
         justify-content: center;
     }
     
-    .employee__socials-link{
+    .team__employee__socials-link{
         padding:7px;
     }
 
-    .employee__swap-buttons{
+    .team__employee__swap-buttons{
         right: 20%;
         left: 20%;
         bottom: 19%;

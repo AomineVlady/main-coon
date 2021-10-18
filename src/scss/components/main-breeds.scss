@@ -1,23 +1,23 @@
-.main-breeds{
+.main__breeds{
     background-color: #1F1C1D;
     padding: 30px 0;
 }
 
-.main-breeds__inner{
+.main__breeds__inner{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.main-breeds_lead{
+.main__breeds-lead{
     width: 70%;
     margin: 0 auto;
     text-align: center;
     padding: 0 45px;
 }
 
-.features__content{
+.main__breeds__features{
     width: 100%;
     display:flex;
     justify-content: center;
@@ -26,19 +26,19 @@
     position: relative;
 }
 
-.features__content-picture{
+.main__breeds__features__content-picture{
     max-height: 100%;
     max-width: 623px;
     object-fit: cover;
     margin: 0 auto;
 }    
 
-.features__content-list{
+.main__breeds__features__content-list{
     list-style-type:none;
     padding: 0;
 }
 
-.features__content-item{
+.main__breeds__features__content-item{
     position: absolute;
     display: flex;
     align-items: center;
@@ -76,16 +76,16 @@
         margin:0 23px 20px;
     }
 
-    &:nth-child(odd) .features__content-text{
+    &:nth-child(odd) .main__breeds__features__content-text{
         text-align: right;
     }
 
-    &:nth-child(even) .features__content-text{
+    &:nth-child(even) .main__breeds__features__content-text{
         text-align: left;  
     }
 }
 
-.features__content-text{
+.main__breeds__features__content-text{
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
@@ -98,17 +98,17 @@
 
 
 @media (max-width: $large-width) {
-    .main-breeds_lead{
+    .main__breeds-lead{
         width: 80%;
         padding: 0 20px;
         margin-bottom: 40px;
     }
 
-    .features__content-picture{
+    .main__breeds__features__content-picture{
         max-width: 440px;
     } 
 
-    .features__content-item{
+    .main__breeds__features__content-item{
         &:nth-child(1){
             top: 26.5%;
             width: 168px;
@@ -138,25 +138,25 @@
             margin:0 12px 40px;
         }
     }
-    .features__content-text{
+    .main__breeds__features__content-text{
         font-size: 14px;
         line-height: 21px;
     }
 } 
 
 @media (max-width: $tablet-width) {
-    .main-breeds_lead{
+    .main__breeds-lead{
         width: 100%;
         padding: 0 5px;
         margin-bottom: 40px;
         text-align: center;
     }
 
-    .features__content-picture{
+    .main__breeds__features__content-picture{
         max-width: 290px;
     } 
 
-    .features__content-item{
+    .main__breeds__features__content-item{
         position: static; 
         &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4){
             width: 100%;
@@ -171,7 +171,7 @@
             color: $main-color;
             margin:0 10px 14px;
         }
-        &:nth-child(odd) .features__content-text{
+        &:nth-child(odd) .main__breeds__features__content-text{
             text-align: left;
         }
         &:last-child::before{
@@ -180,7 +180,7 @@
 
     }
 
-    .features__content-text{
+    .main__breeds__features__content-text{
         line-height: 19px;
         text-align: left;
         margin: 5px 0;

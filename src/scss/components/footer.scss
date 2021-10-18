@@ -5,14 +5,14 @@
     align-items: center;
 }
 
-.footer-left-side,.footer-right-side{
+.footer__left-side,.footer__right-side{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
 }
 
-.location{
+.footer-location{
     text-align: center;
     color:#FDF2E6;
     opacity: .8;
@@ -20,7 +20,7 @@
     padding:10px 0;
 }
 
-.number{
+.footer-number{
     font-family: 'Roboto';
     font-size: 14px;
     line-height: 27px;
@@ -63,10 +63,10 @@
         display: block;
     }
 
-    .footer-left-side{
+    .footer__left-side{
         flex-direction: column-reverse;
     }
-    .footer-right-side{
+    .footer__right-side{
         flex-direction: column;
         align-items: center;
     }

@@ -1,12 +1,9 @@
-//accordion
-document.querySelectorAll('.accordion-button').forEach(item=>{
+document.querySelectorAll('.accordion__item-button').forEach(item=>{
     item.addEventListener('click', function(){
-        this.classList.toggle('accordion-button--active');
+        this.classList.toggle('accordion__item-button--active');
     });
 });
 
-
-//burger-menu
 const burger = document.querySelector('#burger');
 const burgerMenu = document.querySelector('.navbar__menu-list')
 let menuOpen = false;
@@ -31,7 +28,6 @@ burger.addEventListener('click', (e)=>{
     }
 })
 
-//modal window
 const closePopupBtn = document.querySelector('#close-popup');
 const openPopupBtn = document.querySelector('#ask-btn');
 const popupCall = document.querySelector('#call');
@@ -76,11 +72,11 @@ function onCallPopupEscKeydown(e) {
       closePopup(popupCall);
       removeCallPopupListeners();
     }
-  }
+}
   
-  function onCallPopupClick(e) {
+function onCallPopupClick(e) {
     if (e.target.classList.contains('popup')) {
         closePopup(popupCall);
         removeCallPopupListeners();
     }
-  }
+}

@@ -49,17 +49,17 @@
     margin: 0;
 }
 
-.close-popup{
+.close__popup{
     background: none;
     border: none;
     padding: 5px;
     cursor: pointer;
-    &:hover .close-popup-icon{
+    &:hover .close__popup-icon{
         fill: #674C33;
     }
 }
 
-.close-popup-icon{
+.close__popup-icon{
     fill: $main-color;
     transition: all .3s ease;
 }
@@ -218,5 +218,7 @@
 }
 
 @media (max-width: $tablet-width) {
-
+    .form__main{
+        padding: 0;
+    }
 }

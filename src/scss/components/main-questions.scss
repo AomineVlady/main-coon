@@ -1,18 +1,18 @@
-.main-questions{
+.questions{
     background-color: #1F1C1D;
     padding: 50px 0 60px;
 }
 
-.main-question-lead{
+.question__lead{
     padding-bottom: 50px;
 }
 
-.main-question-desc{
+.question__lead-desc{
     width: 70%;
     margin: 0 auto;
 }
 
-.main-questions__button{
+.questions__button{
     position: absolute;
     right: 200px;
 }
@@ -28,7 +28,7 @@
     margin:0 auto;
 }
 
-.accordion-item{
+.accordion__item{
     margin:10px auto;    
     overflow: hidden;
     width: 75%;
@@ -44,7 +44,7 @@
     }
 }
 
-.accordion-button{
+.accordion__item-button{
     font-family: "Roboto";
     font-size: 16px;
     line-height: 19px;
@@ -77,7 +77,7 @@
     }
 }
 
-.accordion__content{
+.accordion__item-content{
     border: 0.5px solid rgba(160, 123, 80, 0.41);
     border-top:none;
     padding: 0 180px 0 38px;
@@ -89,7 +89,7 @@
     max-height: 0;
 }
 
-.accordion-button.accordion-button--active + .accordion__content{
+.accordion__item-button.accordion__item-button--active + .accordion__item-content{
     padding: 44px 180px 44px 38px;
     visibility: visible;
     opacity: 1;
@@ -97,7 +97,7 @@
     max-height: 100%;
 }
 
-.accordion-button.accordion-button--active{
+.accordion__item-button.accordion__item-button--active{
     &::after{
         content: "–";   
         color:#fff;
@@ -105,7 +105,7 @@
     }
 }
 
-.accordion__content-text{
+.accordion__item-text{
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
@@ -117,7 +117,7 @@
 
 @media (max-width: $large-width) {
     
-    .accordion-item{
+    .accordion__item{
         margin:0 auto;
         &::before{
             left: 40px;
@@ -125,7 +125,7 @@
         }
     }
     
-    .accordion-button{
+    .accordion__item-button{
         padding:0 0 0 28px;
         height: auto; 
         &::after{
@@ -135,21 +135,21 @@
         }
     }
     
-    .accordion__content{
+    .accordion__item-content{
         padding: 0 28px;
     }
     
-    .accordion-button.accordion-button--active + .accordion__content{
+    .accordion__item-button.accordion__item-button--active + .accordion__item-content{
         padding: 18px 28px;
         margin: 0 0 15px 0;
     }
     
-    .accordion__content-text{
+    .accordion__item-text{
         margin: 15px 0;
         padding-right: 80px;
     }
 
-    .main-questions__button{
+    .questions__button{
         position: absolute;
         right: 126px;
     }
@@ -157,21 +157,21 @@
 
 @media (max-width: $tablet-width) {
 
-    .main-question-lead {
+    .question-lead {
         padding-bottom: 40px;
     }
     .accordion{
         width: 100%;
     }
     
-    .accordion-item{
+    .accordion__item{
         width: 100%;
         &::before{
             content: none;
         }
     }
     
-    .accordion-button{
+    .accordion__item-button{
         font-size: 14px;
         padding:0 0 0 15px;
         height: 60px; 
@@ -184,21 +184,21 @@
         }
     }
     
-    .accordion__content{
+    .accordion__item-content{
         padding: 0 15px;
     }
     
-    .accordion-button.accordion-button--active + .accordion__content{
+    .accordion__item-button.accordion__item-button--active + .accordion__item-content{
         padding: 5px 20px 5px 15px;
     }
     
-    .accordion__content-text{
+    .accordion__item-text{
         font-size: 14px;
         line-height: 19px;
         padding: 0;
     }
 
-    .main-questions__button{
+    .questions__button{
         position: static;
         margin:5px auto;
     }

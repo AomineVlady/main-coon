@@ -1,4 +1,4 @@
-.main-care{
+.main__care{
     background-image:url("~/img/bg-care-desktop@1x.webp");
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,14 +12,14 @@
 
 
 
-.main-care-title {
+.main__care-title {
     padding: 23px 0;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
 }
 
-.care__list{
+.main__care__list{
     list-style-type:none ;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@
     margin: 0;
 }
 
-.care__list-item{
+.main__care__list-item{
     width: 46.6%;
     margin: 20px;
     border: 0.5px solid $main-color;
@@ -55,7 +55,7 @@
     }
 }
 
-.care__list-content{
+.main__care__list-content{
     font-family: 'Roboto';
     height: 165px;
     display: flex;
@@ -66,14 +66,14 @@
     cursor: default;    
 }
 
-.care__list-title{
+.main__care__list-title{
     font-weight: bold;
     color: $main-color;
     font-size: 22px;
     line-height: 26px;
     margin: 0;
 }
-.care__list-subtitle{
+.main__care__list-subtitle{
     font-weight: 300;
     color: #fff;
     font-size: 14px;
@@ -83,14 +83,14 @@
 }
 
 @media (max-width: $large-width) {
-    .main-care{
+    .main__care{
         background-image:url("~/img/bg-care-tablet@1x.webp");
         background-position: center;
         @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx){
             background-image:url("~/img/bg-care-tablet@2x.webp"); 
         }
     }
-    .care__list-item{
+    .main__care__list-item{
         width: 100%;
         margin: 12px 0;
         &::after{
@@ -100,13 +100,13 @@
 }
 
 @media (max-width: $tablet-width) {
-    .main-care{
+    .main__care{
         background-image:url("~/img/bg-care-mobile@1x.webp");
         @media (min-resolution: $retina-dpi),(min-resolution: $retina-dppx){
             background-image:url("~/img/bg-care-mobile@2x.webp"); 
         }
     }
-    .care__list-item{
+    .main__care__list-item{
         width: 100%;
         margin: 15px 0;
         &::after{
@@ -114,17 +114,17 @@
         }
     }
 
-    .care__list-content{
+    .main__care__list-content{
         width: 100%;
         padding: 20px;
     }
 
-    .care__list-title{
+    .main__care__list-title{
         font-size: 18px;
         margin-bottom: 10px;
     }
 
-    .care__list-subtitle{
+    .main__care__list-subtitle{
         line-height: 19px;
     }
 }
